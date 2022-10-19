@@ -1,5 +1,6 @@
 import React from "react";
 import {useForm} from "react-hook-form"
+import FormHeader from "./FormHeader";
 import "./Form.css"
 
 function Form(){
@@ -11,6 +12,8 @@ function Form(){
       return (
           <form className="form__group" onSubmit={handleSubmit(onSubmit)}>
                   <div className="form__groups">
+                     <FormHeader/>
+                       
                        <div className="input">
                               <label htmlFor="email">email:</label>
                               <input 
